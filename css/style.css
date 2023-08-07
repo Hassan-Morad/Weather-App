@@ -2,10 +2,66 @@ body{
     background-image: url(../img/1173035-cold-weather-wallpaper-1920x1200-1080p.jpg);
     background-size: 100% 100%;
 }
+/* ggg */
+header {
+  padding: 5px 0;
+}
+
+.tagline {
+  font-size: 13px;
+  color: rgb(191, 193, 200);
+}
+
+.menuIcon:hover {
+  color:  rgb(0, 154, 216);
+  border: 2px solid  rgb(0, 154, 216);
+}
+.menuIcon {
+  border: 2px solid transparent;
+  transition: color 300ms;
+}
+.nav-link {
+  font-size: 15px;
+  padding: 2px 25px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar-nav li {
+  border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+}
+.nav-link.active,
+.nav-link:not(.nav-link.active):hover {
+  color:rgb(0, 154, 216);
+  border-radius: 35px;
+}
+
+.logo {
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .nav-link.active,
+  .nav-link:not(.nav-link.active):hover {
+    border: 2px solid rgb(0, 154, 216);
+  }
+  .nav-link {
+    border: 2px solid transparent;
+    transition: color 300ms;
+  }
+
+  .navbar-collapse {
+    background-color: transparent;
+  }
+  .navbar-nav li {
+    border: none !important;
+  }
+}
+/* kkkk */
 .num{
     font-size: 4.4285714286rem;
 }
- img{
+.logo img{
     width:80px;
 }
 .colophon{

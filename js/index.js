@@ -40,8 +40,8 @@ async function getWeatherDate(location = "cairo", num = 3) {
 }
 function displayCurrentDay() {
   let box = "";
-  box += `<div class="col-md-4">
-    <div class="inner-item text-white bg-dark rounded-4 p-2 px-3">
+  box += `<div class="col-lg-4 p-2 col-md-6">
+    <div class="inner-item text-white bg-dark rounded-4 p-1 px-3">
       <div class="head d-flex justify-content-between">
         <p class="font">${
           weekDays[new Date(WeatherData.forecast.forecastday[0].date).getDay()]
@@ -78,7 +78,7 @@ function displayCurrentDay() {
           }km/h</span
         >
         <span class="me-4" style="color: #6a6d71"
-          ><i class="fa-solid fa-compass me-1"></i>East</span
+          ><i class="fa-solid fa-compass "></i>East</span
         >
       </div>
     </div>
@@ -88,8 +88,8 @@ function displayCurrentDay() {
 function displayNextDays() {
   let box = "";
   for (let i = 1; i < globalNum; i++) {
-    box += `<div class="col-md-4">
-    <div class="inner-item text-white bg-dark rounded-4 p-2 px-3">
+    box += `<div class="col-lg-4 p-2 col-md-6">
+    <div class="inner-item text-white bg-dark rounded-4 p-1 px-3">
       <div class="head d-flex justify-content-between">
         <p class="font">${
           weekDays[new Date(WeatherData.forecast.forecastday[i].date).getDay()]
@@ -128,7 +128,7 @@ function displayNextDays() {
           }km/h</span
         >
         <span class="me-4" style="color: #6a6d71"
-          ><i class="fa-solid fa-compass me-1"></i>East</span
+          ><i class="fa-solid fa-compass"></i>East</span
         >
       </div>
     </div>
